@@ -34,9 +34,9 @@ export function showElement(htmlClass) {
   document.querySelector(htmlClass).classList.add("show");
 }
 
-export function getParams(param) {
+export function getParam(param) {
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
-  const product = urlParams.get("product");
+  const product = urlParams.get(param);
   return product;
 }
